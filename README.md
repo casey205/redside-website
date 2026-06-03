@@ -39,7 +39,7 @@ Use the asset URL from **Share → Visibility** (not the browser URL with `/1` v
 
 **Seamless auto-start:** On most Nira plans, embeds show a preview screen with a play button before the model loads. Skipping that requires Nira Enterprise **Skip Asset Preview** ([Nira help article](https://help.nira.app/hc/en-us/articles/26550764700443-Is-it-possible-to-skip-the-preview-page-and-auto-start-a-Nira)). Contact Nira support if you want that on your account.
 
-**Home and portfolio:** Small card iframes were removed; they link to `#viewer` on each project page where the full-height embed lives.
+**Home and portfolio:** Project cards use embedded NIRA iframes. Full-height viewers are on each project page (`#viewer`).
 
 ## Adding YouTube Videos
 
