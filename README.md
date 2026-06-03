@@ -41,6 +41,37 @@ Use the asset URL from **Share → Visibility** (not the browser URL with `/1` v
 
 **Home and portfolio:** Project cards use embedded NIRA iframes. Full-height viewers are on each project page (`#viewer`).
 
+### NIRA works locally but not on GitHub Pages
+
+1. **Use the live site URL**, not the GitHub file browser. Embeds only run on Pages, for example `https://casey205.github.io/redside-website/project-trail.html`, not when previewing HTML on github.com.
+
+2. **Hard refresh** after pushing (`Ctrl+Shift+R`). An older build used link teasers instead of iframes.
+
+3. **Asset visibility in NIRA:** For public visitors, each asset must be **Publicly Accessible** (Share → Visibility). Private assets can look fine on your machine when you are logged into NIRA but fail for everyone else on GitHub Pages.
+
+4. **Click play inside the black viewer.** On Professional plans, NIRA shows a preview overlay before the model loads. That is normal; it is not a broken embed.
+
+5. **Confirm the pushed HTML:** View Page Source on the live URL and search for `redsidemapping.nira.app`. You should see `<iframe` tags, not only `project-card__visual--link`.
+
+6. **Professional plan:** iframe embedding requires NIRA Professional or higher ([NIRA embedding docs](https://help.nira.app/hc/en-us/articles/13521837109275-Embedding-a-Nira-asset-with-iframe)).
+
+## Home Page Intro Video (~20 seconds)
+
+In `index.html`, inside the hero (`.hero__video`), replace the placeholder with:
+
+```html
+<div class="viewer-iframe-container hero__video-player">
+  <iframe
+    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0"
+    title="What Redside Surveying & Mapping delivers"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+```
+
+Caption under the player: **MTB Design Tools → CalTopo → NIRA**.
+
 ## Adding YouTube Videos
 
 Each project page has a video placeholder section. Replace the placeholder div with:
