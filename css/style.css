@@ -715,6 +715,58 @@ p { max-width: 68ch; }
   display: block;
 }
 
+/* Full-width project viewer (main embed on project pages) */
+.viewer-iframe-container--hero {
+  aspect-ratio: unset;
+  min-height: min(72vh, 820px);
+}
+
+.viewer-section__hint {
+  text-align: center;
+  font-size: .85rem;
+  color: var(--color-text-muted);
+  margin-top: .75rem;
+}
+
+/* Teaser on home/portfolio: link to project page instead of tiny iframe */
+.project-card__visual--link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  min-height: 280px;
+  direction: ltr;
+  background: linear-gradient(160deg, #0F1A10, #1A2E1B, #2C3E2D);
+  color: rgba(255, 255, 255, .85);
+  text-decoration: none;
+  transition: filter var(--transition);
+}
+
+.project-card__visual--link:hover {
+  filter: brightness(1.08);
+}
+
+.project-card__visual--link svg {
+  opacity: .55;
+}
+
+.project-card__visual-cta {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-rust-light);
+}
+
+.project-card__visual-sub {
+  font-size: .75rem;
+  color: rgba(255, 255, 255, .45);
+  max-width: 22ch;
+  text-align: center;
+  line-height: 1.5;
+}
+
 /* --- Differentiator / Feature Strips --------------------- */
 .feature-strip {
   display: flex;

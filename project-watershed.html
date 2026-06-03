@@ -14,7 +14,7 @@
     .fade-in.visible { opacity: 1; transform: translateY(0); }
   </style>
 </head>
-<body>
+<body class="project-page">
 
   <!-- ===== Navigation ===== -->
   <nav class="nav scrolled" aria-label="Main navigation">
@@ -55,7 +55,7 @@
   </section>
 
   <!-- ===== Interactive Viewer ===== -->
-  <section style="background: black; padding: 3rem 0;">
+  <section id="viewer" style="background: black; padding: 3rem 0;">
     <div class="container">
 
       <!--
@@ -78,16 +78,17 @@
         ============================================================
       -->
 
-      <div class="viewer-iframe-container">
+      <div class="viewer-iframe-container viewer-iframe-container--hero">
         <iframe
           frameborder="0"
-          loading="lazy"
           style="background:black"
           allowfullscreen
-          src="https://redsidemapping.nira.app/a/89-wfMpBTC66tqV2csEcsw/1"
+          allow="fullscreen"
+          src="https://redsidemapping.nira.app/a/89-wfMpBTC66tqV2csEcsw"
           title="Watershed Restoration Site 3D Model | Redside Surveying & Mapping">
         </iframe>
       </div>
+      <p class="viewer-section__hint">Press play in the viewer to load the model. Use fullscreen for the best experience.</p>
 
     </div>
   </section>
