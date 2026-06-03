@@ -125,7 +125,13 @@
 
         <!-- Contact Form -->
         <div>
-          <form class="form contact-form" novalidate>
+          <form
+            class="form contact-form"
+            action="https://formspree.io/f/xkoanold"
+            method="POST"
+            novalidate
+          >
+            <input type="hidden" name="_subject" value="Redside website contact form" />
             <div class="grid-2" style="gap:1.25rem;">
               <div class="form-group">
                 <label for="name">Name <span style="color:var(--color-rust)">*</span></label>
@@ -166,12 +172,7 @@
               Send Message
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             </button>
-            <p style="font-size:.8rem; color:var(--color-text-muted); margin-top:.5rem;">
-              <!-- 
-                NOTE: Wire this form to a backend service to make it functional.
-                Easy options: Formspree (formspree.io), Netlify Forms, or EmailJS.
-                Add your service endpoint to the form action="" attribute.
-              -->
+            <p class="contact-form__status" style="font-size:.8rem; color:var(--color-text-muted); margin-top:.5rem;" role="status" aria-live="polite">
               We'll get back to you within 1–2 business days.
             </p>
           </form>
