@@ -55,69 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // --- Contact form (Formspree) ----------------------------
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    const statusEl = form.querySelector('.contact-form__status');
-    const submitBtn = form.querySelector('[type="submit"]');
-    const originalBtnText = submitBtn ? submitBtn.textContent : 'Send Message';
+  // --- Contact form: show thank-you after Formspree redirect (?sent=1) ---
+  const contactSuccess = document.getElementById('contact-success');
+  const contactForm = document.querySelector('.contact-form');
+  const params = new URLSearchParams(window.location.search);
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
+  if (params.get('sent') === '1' && contactSuccess) {
+    contactSuccess.hidden = false;
+    if (contactForm) contactForm.hidden = true;
+    window.history.replaceState({}, '', window.location.pathname);
+  }
 
-      const action = form.getAttribute('action') || '';
-      if (action.includes('YOUR_FORMSPREE_ID')) {
-        if (statusEl) {
-          statusEl.textContent = 'Form is not configured yet. Please email casey@redsidemapping.com directly.';
-          statusEl.style.color = 'var(--color-rust)';
-        }
-        return;
-      }
-
+  if (contactForm) {
+    const submitBtn = contactForm.querySelector('[type="submit"]');
+    contactForm.addEventListener('submit', () => {
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.textContent = 'Sending...';
-      }
-      if (statusEl) statusEl.textContent = '';
-
-      try {
-        const response = await fetch(action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { Accept: 'application/json' },
-        });
-
-        if (response.ok) {
-          if (submitBtn) {
-            submitBtn.textContent = 'Message Sent!';
-            submitBtn.style.background = '#2C3E2D';
-          }
-          if (statusEl) {
-            statusEl.textContent = 'Thanks. We received your message and will reply within 1–2 business days.';
-          }
-          form.reset();
-          setTimeout(() => {
-            if (submitBtn) {
-              submitBtn.textContent = originalBtnText;
-              submitBtn.disabled = false;
-              submitBtn.style.background = '';
-            }
-            if (statusEl) {
-              statusEl.textContent = "We'll get back to you within 1–2 business days.";
-            }
-          }, 6000);
-        } else {
-          throw new Error('Formspree error');
-        }
-      } catch (err) {
-        if (submitBtn) {
-          submitBtn.textContent = originalBtnText;
-          submitBtn.disabled = false;
-        }
-        if (statusEl) {
-          statusEl.textContent = 'Something went wrong. Please email casey@redsidemapping.com directly.';
-          statusEl.style.color = 'var(--color-rust)';
-        }
       }
     });
   }

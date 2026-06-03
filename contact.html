@@ -125,13 +125,18 @@
 
         <!-- Contact Form -->
         <div>
+          <p id="contact-success" class="contact-form__success" hidden>
+            Thanks, your message was sent. We will reply within 1–2 business days.
+          </p>
           <form
             class="form contact-form"
             action="https://formspree.io/f/xkoanold"
             method="POST"
-            novalidate
           >
             <input type="hidden" name="_subject" value="Redside website contact form" />
+            <input type="hidden" name="_next" value="https://casey205.github.io/redside-website/contact.html?sent=1" />
+            <!-- Honeypot: leave empty (spam bots fill this) -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="contact-form__honeypot" aria-hidden="true" />
             <div class="grid-2" style="gap:1.25rem;">
               <div class="form-group">
                 <label for="name">Name <span style="color:var(--color-rust)">*</span></label>
