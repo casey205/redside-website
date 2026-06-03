@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redside Surveying & Mapping | Geospatial Consulting</title>
+  <meta name="description" content="Redside Surveying & Mapping provides reality capture, GIS analysis, terrain visualization, and surveying services for environmental consultants, recreation planners, and infrastructure projects in the Pacific Northwest." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 600ms ease, transform 600ms ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Redside Surveying &amp; Mapping</span>
+        <span class="nav__logo-tag">Licensed Professional Land Surveyor</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__topo"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <div class="hero__eyebrow">Geospatial Consulting · Pacific Northwest</div>
+      <h1>
+        Understand Your Site
+        <span>Before You Visit It.</span>
+      </h1>
+      <p class="hero__lead">
+        We combine licensed surveying, GIS analysis, and reality capture to help 
+        environmental consultants, recreation planners, and infrastructure teams 
+        make confident decisions about complex landscapes.
+      </p>
+      <div class="hero__actions">
+        <a href="portfolio.html" class="btn btn-primary">Explore Projects</a>
+        <a href="services.html" class="btn btn-outline">View Services</a>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero__stats">
+        <div>
+          <div class="hero__stat-value">PLS</div>
+          <div class="hero__stat-label">Licensed Surveyor</div>
+        </div>
+        <div>
+          <div class="hero__stat-value">3D</div>
+          <div class="hero__stat-label">Reality Capture</div>
+        </div>
+        <div>
+          <div class="hero__stat-value">GIS</div>
+          <div class="hero__stat-label">Terrain Analysis</div>
+        </div>
+        <div>
+          <div class="hero__stat-value">Web</div>
+          <div class="hero__stat-label">Project Delivery</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ===== Value Proposition ===== -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header center fade-in">
+        <div class="section-eyebrow">Why Redside</div>
+        <h2>The Technology Is Not the Product.<br>The Understanding Is.</h2>
+        <p class="lead" style="margin-inline:auto; max-width:58ch;">
+          We don't sell drone flights or point clouds. We deliver site understanding: 
+          faster decisions, clearer communication, and better project outcomes through 
+          geospatial intelligence.
+        </p>
+      </div>
+      <div class="feature-strip fade-in">
+        <div class="feature-item">
+          <div class="feature-item__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/><path d="M13 13l6 6"/></svg>
+          </div>
+          <div>
+            <div class="feature-item__title">Surveying Precision</div>
+            <p class="feature-item__text">Licensed Professional Land Surveyor background means your data meets legal accuracy standards, not just visual accuracy.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/></svg>
+          </div>
+          <div>
+            <div class="feature-item__title">Terrain Visualization</div>
+            <p class="feature-item__text">Interactive 3D models let stakeholders explore sites remotely, reducing site visits and accelerating review cycles.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div>
+            <div class="feature-item__title">Faster Decisions</div>
+            <p class="feature-item__text">Custom geospatial workflows eliminate repetitive analysis steps so your team can focus on design and planning.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <div class="feature-item__title">Stakeholder Communication</div>
+            <p class="feature-item__text">Web-based project delivery means every team member and decision-maker can access and understand the data, not just GIS specialists.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Projects ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow">Featured Projects</div>
+        <h2>Reality Capture in Practice</h2>
+        <p class="lead">From trail corridors to watershed restoration sites, see how geospatial visualization supports real planning and design work.</p>
+      </div>
+
+      <!-- Trail Corridor -->
+      <div style="margin-bottom: 2.5rem;" class="fade-in">
+        <div class="project-card">
+          <div class="project-card__visual" style="position:relative; overflow:hidden;">
+            <iframe
+              frameborder="0"
+              loading="lazy"
+              style="background:black; position:absolute; inset:0; width:100%; height:100%; border:none;"
+              allowfullscreen
+              src="https://redsidemapping.nira.app/a/aF21v2UqTr6QHk-ubuFTnw/1"
+              title="Trail Corridor Visualization 3D Model | Redside Surveying & Mapping">
+            </iframe>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Trail Planning</span>
+            <h3 class="project-card__title">Trail Corridor Visualization</h3>
+            <p class="project-card__text">A full-corridor reality capture model that lets planners and stakeholders walk a proposed trail alignment before a single shovel breaks ground. Terrain assessment, sight-line analysis, and stakeholder engagement, all from a browser.</p>
+            <div class="project-card__tags">
+              <span class="tag-pill">Corridor Analysis</span>
+              <span class="tag-pill">Stakeholder Engagement</span>
+              <span class="tag-pill">Recreation Planning</span>
+            </div>
+            <a href="project-trail.html" class="card__link" style="margin-top:.5rem;">
+              View Project
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Watershed -->
+      <div style="margin-bottom: 2.5rem;" class="fade-in">
+        <div class="project-card project-card--reverse">
+          <div class="project-card__visual" style="position:relative; overflow:hidden;">
+            <iframe
+              frameborder="0"
+              loading="lazy"
+              style="background:black; position:absolute; inset:0; width:100%; height:100%; border:none;"
+              allowfullscreen
+              src="https://redsidemapping.nira.app/a/89-wfMpBTC66tqV2csEcsw/1"
+              title="Watershed Restoration Site 3D Model | Redside Surveying & Mapping">
+            </iframe>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Watershed Restoration</span>
+            <h3 class="project-card__title">Watershed Restoration Site</h3>
+            <p class="project-card__text">A detailed terrain model of a restoration project area that enables remote site review by environmental consultants, regulatory reviewers, and restoration practitioners, reducing costly site visits while improving habitat planning context.</p>
+            <div class="project-card__tags">
+              <span class="tag-pill">Environmental Consulting</span>
+              <span class="tag-pill">Habitat Context</span>
+              <span class="tag-pill">Remote Review</span>
+            </div>
+            <a href="project-watershed.html" class="card__link" style="margin-top:.5rem;">
+              View Project
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Building -->
+      <div class="fade-in">
+        <div class="project-card">
+          <div class="project-card__visual" style="position:relative; overflow:hidden;">
+            <iframe
+              frameborder="0"
+              loading="lazy"
+              style="background:black; position:absolute; inset:0; width:100%; height:100%; border:none;"
+              allowfullscreen
+              src="https://redsidemapping.nira.app/a/6LRWNEmNTcmTe2MJr3DRqQ/1"
+              title="Complex Building 3D Model | Redside Surveying & Mapping">
+            </iframe>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Existing Conditions</span>
+            <h3 class="project-card__title">Complex Building Model</h3>
+            <p class="project-card__text">High-detail reality capture of a complex structure for existing conditions documentation. Precise geometry modeling supports construction planning, facility management, and renovation design without repeated site access.</p>
+            <div class="project-card__tags">
+              <span class="tag-pill">Existing Conditions</span>
+              <span class="tag-pill">Construction Support</span>
+              <span class="tag-pill">Facility Documentation</span>
+            </div>
+            <a href="project-building.html" class="card__link" style="margin-top:.5rem;">
+              View Project
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:3rem;" class="fade-in">
+        <a href="portfolio.html" class="btn btn-outline-dark">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Custom Workflows / Terrain Intelligence ===== -->
+  <section class="section">
+    <div class="container fade-in">
+      <div class="workflow-highlight">
+        <div>
+          <div class="section-eyebrow" style="color:rgba(255,255,255,.5);">Custom Geospatial Workflows</div>
+          <h2>Terrain Intelligence Built Around Your Work</h2>
+          <p class="lead" style="margin-bottom:1rem;">Off-the-shelf tools solve general problems. We build custom plugins, processing scripts, and analysis workflows designed around the decisions you actually need to make.</p>
+          <p style="color:rgba(255,255,255,.55); font-size:.9rem; line-height:1.75; margin-bottom:1.5rem;">From trail corridor analysis to watershed delineation pipelines, custom workflows eliminate repetitive steps and put your team's time back into the work that requires judgment.</p>
+          <a href="services.html#workflows" class="btn btn-primary">See How It Works</a>
+        </div>
+        <div class="workflow-highlight__steps">
+          <div class="workflow-step">
+            <div class="workflow-step__num">1</div>
+            <p class="workflow-step__text"><strong style="color:rgba(255,255,255,.9);">Define the Problem.</strong> What decisions need to be made? What's slowing your analysis down?</p>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step__num">2</div>
+            <p class="workflow-step__text"><strong style="color:rgba(255,255,255,.9);">Custom Scripts &amp; Plugins.</strong> Purpose-built QGIS tools and processing chains for your specific analysis requirements.</p>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step__num">3</div>
+            <p class="workflow-step__text"><strong style="color:rgba(255,255,255,.9);">Automate the Repetitive.</strong> Standardize what's always the same so your team focuses on what requires judgment.</p>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step__num">4</div>
+            <p class="workflow-step__text"><strong style="color:rgba(255,255,255,.9);">Usable Deliverables.</strong> Maps, profiles, and reports formatted for how your team actually works.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Who We Serve ===== -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header center fade-in">
+        <div class="section-eyebrow">Our Clients</div>
+        <h2>Who We Work With</h2>
+        <p class="lead" style="margin-inline:auto;">We support the professionals and organizations doing meaningful work in the field.</p>
+      </div>
+      <div class="grid-3 fade-in">
+        <div class="card">
+          <div class="card__body">
+            <div style="font-size:2rem; margin-bottom:.75rem;">🌿</div>
+            <h4 class="card__title">Environmental Consultants</h4>
+            <p class="card__text">Remote site review, habitat context, restoration planning support, and regulatory documentation.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <div style="font-size:2rem; margin-bottom:.75rem;">🏔️</div>
+            <h4 class="card__title">Recreation Planners &amp; Trail Designers</h4>
+            <p class="card__text">Corridor visualization, alignment analysis, terrain assessment, and stakeholder communication tools.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <div style="font-size:2rem; margin-bottom:.75rem;">💧</div>
+            <h4 class="card__title">Watershed Restoration Practitioners</h4>
+            <p class="card__text">Site familiarization, terrain modeling, and interactive project delivery for restoration teams.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <div style="font-size:2rem; margin-bottom:.75rem;">🏗️</div>
+            <h4 class="card__title">Engineering Firms</h4>
+            <p class="card__text">Existing conditions documentation, precise terrain data, and as-built capture for design and construction.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <div style="font-size:2rem; margin-bottom:.75rem;">🌲</div>
+            <h4 class="card__title">Natural Resource Organizations</h4>
+            <p class="card__text">Landscape-scale mapping, terrain analysis, and geospatial workflows for resource management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Banner ===== -->
+  <section class="section bg-earth">
+    <div class="container text-center fade-in">
+      <div class="section-eyebrow" style="color:rgba(255,255,255,.5); justify-content:center;">
+        <span style="background:rgba(255,255,255,.2);"></span>
+        Let's Talk
+      </div>
+      <h2 style="color:#fff; margin-bottom:1rem;">Ready to See Your Site in 3D?</h2>
+      <p class="lead" style="color:rgba(255,255,255,.7); margin-inline:auto; max-width:50ch; margin-bottom:2rem;">
+        Interested in seeing how reality capture and geospatial visualization can support your project? Let's talk.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Redside Surveying &amp; Mapping</div>
+          <p class="footer__tagline">Geospatial Solutions for Recreation,<br>Restoration, and Infrastructure Projects.</p>
+          <span class="footer__license">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Licensed Professional Land Surveyor
+          </span>
+        </div>
+        <div>
+          <div class="footer__heading">Services</div>
+          <ul class="footer__links">
+            <li><a href="services.html">Reality Capture</a></li>
+            <li><a href="services.html">GIS &amp; Terrain Analysis</a></li>
+            <li><a href="services.html">Trail Planning Support</a></li>
+            <li><a href="services.html">Digital Project Delivery</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Projects</div>
+          <ul class="footer__links">
+            <li><a href="project-trail.html">Trail Corridor</a></li>
+            <li><a href="project-watershed.html">Watershed Restoration</a></li>
+            <li><a href="project-building.html">Building Model</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Company</div>
+          <ul class="footer__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html#workflows">Custom Workflows</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Redside Surveying &amp; Mapping. All rights reserved.</span>
+        <span>Pacific Northwest</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

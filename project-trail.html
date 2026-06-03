@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>Trail Corridor Visualization | Redside Surveying & Mapping</title>
+  <meta name="description" content="Interactive 3D trail corridor visualization for trail planning, stakeholder engagement, and recreation design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 600ms ease, transform 600ms ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav scrolled" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Redside Surveying &amp; Mapping</span>
+        <span class="nav__logo-tag">Licensed Professional Land Surveyor</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Page Hero ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div style="margin-bottom:.75rem;">
+        <a href="portfolio.html" style="color:rgba(255,255,255,.5); font-size:.85rem; display:inline-flex; align-items:center; gap:.4rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          All Projects
+        </a>
+      </div>
+      <div class="section-eyebrow" style="color:rgba(255,255,255,.5);">Trail Planning · Recreation Design</div>
+      <h1>Trail Corridor Visualization</h1>
+      <p class="lead" style="max-width:58ch;">
+        A full-corridor reality capture model that lets planners and stakeholders 
+        understand a proposed trail alignment before a single shovel breaks ground.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Interactive Viewer ===== -->
+  <section style="background: black; padding: 3rem 0;">
+    <div class="container">
+
+      <!--
+        ============================================================
+        NIRA EMBED: TRAIL CORRIDOR
+        ============================================================
+        When your Nira asset is ready and set to "Publicly Accessible":
+        1. Copy the asset URL from your browser's address bar (or Share > Visibility)
+        2. Replace the .viewer-placeholder block below with the iframe block in the comment
+        3. Paste your URL into the src attribute
+        ============================================================
+
+        READY TO GO: replace the placeholder with this:
+
+        <div class="viewer-iframe-container">
+          <iframe
+            frameborder="0"
+            loading="lazy"
+            style="background:black"
+            allowfullscreen
+            src="https://app.nira.app/YOUR_ASSET_URL_HERE"
+            title="Trail Corridor 3D Model | Redside Surveying & Mapping">
+          </iframe>
+        </div>
+
+        ============================================================
+      -->
+
+      <div class="viewer-iframe-container">
+        <iframe
+          frameborder="0"
+          loading="lazy"
+          style="background:black"
+          allowfullscreen
+          src="https://redsidemapping.nira.app/a/aF21v2UqTr6QHk-ubuFTnw/1"
+          title="Trail Corridor Visualization 3D Model | Redside Surveying & Mapping">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Project Content ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2 fade-in" style="gap:4rem; align-items:start;">
+        <div>
+          <div class="section-eyebrow">Project Overview</div>
+          <h2>Walking the Trail Before It Exists</h2>
+          <p class="lead">Reality capture of a proposed trail corridor creates a shared spatial understanding that drawings and maps alone can't provide.</p>
+          <p style="color:var(--color-text-muted); margin-top:1rem; line-height:1.8;">
+            Trail alignment decisions involve terrain complexity, vegetation, drainage, 
+            and user experience factors that are difficult to communicate through traditional 
+            plan-and-profile drawings. A 3D corridor model changes that. Every stakeholder 
+            can explore the proposed route, understand grade changes, identify potential 
+            problem areas, and ask better questions.
+          </p>
+          <p style="color:var(--color-text-muted); margin-top:1rem; line-height:1.8;">
+            For recreation organizations and trail builders, this means fewer surprises in 
+            the field, better-informed design decisions, and more productive stakeholder 
+            conversations at every stage of a project.
+          </p>
+        </div>
+        <div>
+          <div class="callout" style="margin-bottom:2rem;">
+            <p>"The ability to walk a trail virtually before construction and share that experience with project reviewers and community stakeholders changes the conversation entirely."</p>
+          </div>
+          <h4 style="margin-bottom:1rem;">Applications</h4>
+          <ul style="display:flex; flex-direction:column; gap:.6rem;">
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Recreation planning and mountain bike trail design
+            </li>
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Land trusts, conservancies, and permit review support
+            </li>
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Community and stakeholder engagement
+            </li>
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Environmental and permit review support
+            </li>
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Volunteer and crew orientation
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Takeaways ===== -->
+  <section class="section bg-cream">
+    <div class="container fade-in">
+      <div class="section-header">
+        <div class="section-eyebrow">Key Takeaways</div>
+        <h2>What This Delivers</h2>
+      </div>
+      <div class="takeaways">
+        <div class="takeaway-item">
+          <strong>Site Familiarity</strong>
+          Every team member can understand the corridor, regardless of whether they've visited it.
+        </div>
+        <div class="takeaway-item">
+          <strong>Faster Review</strong>
+          Project reviewers and stakeholders can evaluate the alignment remotely, reducing back-and-forth.
+        </div>
+        <div class="takeaway-item">
+          <strong>Better Decisions</strong>
+          3D terrain context surfaces design challenges that plan drawings miss.
+        </div>
+        <div class="takeaway-item">
+          <strong>Reusable Asset</strong>
+          The model remains available for construction crews, maintenance planning, and future design phases.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Video Placeholder ===== -->
+  <section class="section">
+    <div class="container fade-in">
+      <div class="section-header">
+        <div class="section-eyebrow">Supporting Content</div>
+        <h2>Project Walkthrough</h2>
+        <p class="lead">A narrated walkthrough of the corridor model and how it was used in the planning process.</p>
+      </div>
+      <div style="width:100%; aspect-ratio:16/9; background:var(--color-dark); border-radius:var(--radius-lg); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; color:rgba(255,255,255,.5); border:1px solid rgba(255,255,255,.06);">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        <span style="font-size:.85rem; letter-spacing:.06em; text-transform:uppercase;">YouTube Video (Coming Soon)</span>
+        <p style="font-size:.8rem; max-width:30ch; text-align:center; line-height:1.6;">Replace this placeholder with a YouTube embed when your walkthrough video is ready.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Next Project ===== -->
+  <section class="section bg-earth">
+    <div class="container fade-in" style="display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
+      <div>
+        <div class="section-eyebrow" style="color:rgba(255,255,255,.4);">Next Project</div>
+        <h3 style="color:#fff; font-size:1.5rem;">Watershed Restoration Site</h3>
+        <p style="color:rgba(255,255,255,.6); font-size:.95rem; margin-top:.4rem;">Remote site review and habitat context for environmental consulting.</p>
+      </div>
+      <a href="project-watershed.html" class="btn btn-primary">View Project</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Redside Surveying &amp; Mapping</div>
+          <p class="footer__tagline">Geospatial Solutions for Recreation,<br>Restoration, and Infrastructure Projects.</p>
+          <span class="footer__license">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Licensed Professional Land Surveyor
+          </span>
+        </div>
+        <div>
+          <div class="footer__heading">Services</div>
+          <ul class="footer__links">
+            <li><a href="services.html">Reality Capture</a></li>
+            <li><a href="services.html">GIS &amp; Terrain Analysis</a></li>
+            <li><a href="services.html">Trail Planning Support</a></li>
+            <li><a href="services.html">Digital Project Delivery</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Projects</div>
+          <ul class="footer__links">
+            <li><a href="project-trail.html">Trail Corridor</a></li>
+            <li><a href="project-watershed.html">Watershed Restoration</a></li>
+            <li><a href="project-building.html">Building Model</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Company</div>
+          <ul class="footer__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html#workflows">Custom Workflows</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Redside Surveying &amp; Mapping. All rights reserved.</span>
+        <span>Pacific Northwest</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

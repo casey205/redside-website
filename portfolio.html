@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Redside Surveying & Mapping</title>
+  <meta name="description" content="Explore reality capture and GIS projects from Redside Surveying & Mapping: trail corridors, watershed restoration sites, and building documentation models." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 600ms ease, transform 600ms ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav scrolled" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Redside Surveying &amp; Mapping</span>
+        <span class="nav__logo-tag">Licensed Professional Land Surveyor</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Page Hero ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-eyebrow" style="color:rgba(255,255,255,.5);">Our Work</div>
+      <h1>Project Portfolio</h1>
+      <p class="lead" style="max-width:58ch;">
+        Each project is an example of how reality capture and geospatial analysis 
+        create better site understanding for the people who plan, restore, and build in the landscape.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Project Grid ===== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Trail Corridor -->
+      <div style="margin-bottom: 2.5rem;" class="fade-in">
+        <div class="project-card">
+          <div class="project-card__visual" style="position:relative; overflow:hidden;">
+            <iframe
+              frameborder="0"
+              loading="lazy"
+              style="background:black; position:absolute; inset:0; width:100%; height:100%; border:none;"
+              allowfullscreen
+              src="https://redsidemapping.nira.app/a/aF21v2UqTr6QHk-ubuFTnw/1"
+              title="Trail Corridor Visualization 3D Model | Redside Surveying & Mapping">
+            </iframe>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Trail Planning · Recreation</span>
+            <h2 class="project-card__title">Trail Corridor Visualization</h2>
+            <p class="project-card__text">
+              Reality capture of a proposed trail corridor that enables planners, designers, 
+              and stakeholders to walk the alignment virtually, understanding terrain, 
+              sight lines, and design challenges before any physical work begins.
+            </p>
+            <p class="project-card__text" style="font-size:.88rem;">
+              Particularly useful for mountain bike trail designers, recreation organizations, 
+            and conservation groups seeking stakeholder buy-in on new alignments.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag-pill">Corridor Analysis</span>
+              <span class="tag-pill">Stakeholder Engagement</span>
+              <span class="tag-pill">Terrain Assessment</span>
+              <span class="tag-pill">Recreation Design</span>
+            </div>
+            <a href="project-trail.html" class="btn btn-outline-dark" style="margin-top:1rem;">Full Project Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Watershed -->
+      <div style="margin-bottom: 2.5rem;" class="fade-in">
+        <div class="project-card project-card--reverse">
+          <div class="project-card__visual" style="position:relative; overflow:hidden;">
+            <iframe
+              frameborder="0"
+              loading="lazy"
+              style="background:black; position:absolute; inset:0; width:100%; height:100%; border:none;"
+              allowfullscreen
+              src="https://redsidemapping.nira.app/a/89-wfMpBTC66tqV2csEcsw/1"
+              title="Watershed Restoration Site 3D Model | Redside Surveying & Mapping">
+            </iframe>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Watershed Restoration · Environmental</span>
+            <h2 class="project-card__title">Watershed Restoration Site</h2>
+            <p class="project-card__text">
+              A comprehensive terrain model of a watershed restoration area, giving 
+              environmental consultants, restoration practitioners, and distributed project teams 
+              accurate site context without repeated field visits.
+            </p>
+            <p class="project-card__text" style="font-size:.88rem;">
+              Supports restoration planning, regulatory review, habitat assessment, 
+              and remote project collaboration for distributed teams.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag-pill">Environmental Consulting</span>
+              <span class="tag-pill">Habitat Context</span>
+              <span class="tag-pill">Remote Review</span>
+              <span class="tag-pill">Restoration Planning</span>
+            </div>
+            <a href="project-watershed.html" class="btn btn-outline-dark" style="margin-top:1rem;">Full Project Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Building -->
+      <div class="fade-in">
+        <div class="project-card">
+          <div class="project-card__visual" style="position:relative; overflow:hidden;">
+            <iframe
+              frameborder="0"
+              loading="lazy"
+              style="background:black; position:absolute; inset:0; width:100%; height:100%; border:none;"
+              allowfullscreen
+              src="https://redsidemapping.nira.app/a/6LRWNEmNTcmTe2MJr3DRqQ/1"
+              title="Complex Building 3D Model | Redside Surveying & Mapping">
+            </iframe>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Existing Conditions · Infrastructure</span>
+            <h2 class="project-card__title">Complex Building Model</h2>
+            <p class="project-card__text">
+              High-detail reality capture of a structurally complex building for existing 
+              conditions documentation. The model captures geometry that is difficult 
+              to measure conventionally, supporting renovation design and facility management.
+            </p>
+            <p class="project-card__text" style="font-size:.88rem;">
+              Useful for engineering firms, architects, and facilities teams that need 
+              accurate as-built documentation without repeated site access.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag-pill">Existing Conditions</span>
+              <span class="tag-pill">Construction Support</span>
+              <span class="tag-pill">Facility Documentation</span>
+              <span class="tag-pill">Complex Geometry</span>
+            </div>
+            <a href="project-building.html" class="btn btn-outline-dark" style="margin-top:1rem;">Full Project Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Future Projects Placeholder ===== -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header center fade-in">
+        <div class="section-eyebrow">Always Growing</div>
+        <h2>More Projects Coming</h2>
+        <p class="lead" style="margin-inline:auto; max-width:50ch;">
+          We're continuously adding new project examples as work is completed. 
+          Check back for additional case studies, or reach out to discuss your specific application.
+        </p>
+        <a href="contact.html" class="btn btn-outline-dark" style="margin-top:1.5rem;">Discuss Your Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Redside Surveying &amp; Mapping</div>
+          <p class="footer__tagline">Geospatial Solutions for Recreation,<br>Restoration, and Infrastructure Projects.</p>
+          <span class="footer__license">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Licensed Professional Land Surveyor
+          </span>
+        </div>
+        <div>
+          <div class="footer__heading">Services</div>
+          <ul class="footer__links">
+            <li><a href="services.html">Reality Capture</a></li>
+            <li><a href="services.html">GIS &amp; Terrain Analysis</a></li>
+            <li><a href="services.html">Trail Planning Support</a></li>
+            <li><a href="services.html">Digital Project Delivery</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Projects</div>
+          <ul class="footer__links">
+            <li><a href="project-trail.html">Trail Corridor</a></li>
+            <li><a href="project-watershed.html">Watershed Restoration</a></li>
+            <li><a href="project-building.html">Building Model</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Company</div>
+          <ul class="footer__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html#workflows">Custom Workflows</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Redside Surveying &amp; Mapping. All rights reserved.</span>
+        <span>Pacific Northwest</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

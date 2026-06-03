@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>Watershed Restoration Site | Redside Surveying & Mapping</title>
+  <meta name="description" content="Interactive 3D terrain model for watershed restoration, supporting environmental consulting, habitat assessment, and remote project review." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 600ms ease, transform 600ms ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav scrolled" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Redside Surveying &amp; Mapping</span>
+        <span class="nav__logo-tag">Licensed Professional Land Surveyor</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Page Hero ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div style="margin-bottom:.75rem;">
+        <a href="portfolio.html" style="color:rgba(255,255,255,.5); font-size:.85rem; display:inline-flex; align-items:center; gap:.4rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          All Projects
+        </a>
+      </div>
+      <div class="section-eyebrow" style="color:rgba(255,255,255,.5);">Watershed Restoration · Environmental Consulting</div>
+      <h1>Watershed Restoration Site</h1>
+      <p class="lead" style="max-width:58ch;">
+        Detailed terrain modeling of a restoration project area, giving environmental 
+        consultants and restoration practitioners accurate site context without repeated field visits.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Interactive Viewer ===== -->
+  <section style="background: black; padding: 3rem 0;">
+    <div class="container">
+
+      <!--
+        ============================================================
+        NIRA EMBED: WATERSHED RESTORATION SITE
+        ============================================================
+        Replace the placeholder below with:
+
+        <div class="viewer-iframe-container">
+          <iframe
+            frameborder="0"
+            loading="lazy"
+            style="background:black"
+            allowfullscreen
+            src="https://app.nira.app/YOUR_ASSET_URL_HERE"
+            title="Watershed Restoration Site 3D Model | Redside Surveying & Mapping">
+          </iframe>
+        </div>
+
+        ============================================================
+      -->
+
+      <div class="viewer-iframe-container">
+        <iframe
+          frameborder="0"
+          loading="lazy"
+          style="background:black"
+          allowfullscreen
+          src="https://redsidemapping.nira.app/a/89-wfMpBTC66tqV2csEcsw/1"
+          title="Watershed Restoration Site 3D Model | Redside Surveying & Mapping">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Project Content ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2 fade-in" style="gap:4rem; align-items:start;">
+        <div>
+          <div class="section-eyebrow">Project Overview</div>
+          <h2>Restoration Planning From the Office</h2>
+          <p class="lead">A terrain model that puts every member of a restoration team on the same page before anyone sets foot on site.</p>
+          <p style="color:var(--color-text-muted); margin-top:1rem; line-height:1.8;">
+            Watershed restoration projects often involve distributed teams: environmental 
+            consultants in one office, regulatory reviewers in another, and restoration crews 
+            on site. Getting everyone oriented to the same landscape context is time-consuming 
+            and expensive when it depends on physical site visits.
+          </p>
+          <p style="color:var(--color-text-muted); margin-top:1rem; line-height:1.8;">
+            An interactive terrain model changes that dynamic. Consultants can evaluate 
+            habitat features, review restoration approaches, and prepare for site visits 
+            with a level of spatial understanding previously only available to those 
+            who had already been there.
+          </p>
+        </div>
+        <div>
+          <div class="callout" style="margin-bottom:2rem;">
+            <p>"Before we had this kind of spatial context, every reviewer needed their own site visit. Now we can orient the entire project team in a single web meeting."</p>
+          </div>
+          <h4 style="margin-bottom:1rem;">Applications</h4>
+          <ul style="display:flex; flex-direction:column; gap:.6rem;">
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Environmental consulting and habitat assessment
+            </li>
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Permit and regulatory review support documentation
+            </li>
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Grant reporting and project documentation
+            </li>
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Before/after comparison documentation
+            </li>
+            <li style="display:flex; gap:.7rem; align-items:flex-start; font-size:.95rem; color:var(--color-text-muted);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-rust)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              Remote project monitoring and crew briefing
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Takeaways ===== -->
+  <section class="section bg-cream">
+    <div class="container fade-in">
+      <div class="section-header">
+        <div class="section-eyebrow">Key Takeaways</div>
+        <h2>What This Delivers</h2>
+      </div>
+      <div class="takeaways">
+        <div class="takeaway-item">
+          <strong>Remote Site Review</strong>
+          Consultants and project reviewers can familiarize themselves with the site from anywhere in the world.
+        </div>
+        <div class="takeaway-item">
+          <strong>Habitat Context</strong>
+          Terrain, vegetation, and drainage features are visible in spatial context, not just described in reports.
+        </div>
+        <div class="takeaway-item">
+          <strong>Fewer Site Visits</strong>
+          Orientation, review, and planning discussions happen remotely, saving time and reducing project costs.
+        </div>
+        <div class="takeaway-item">
+          <strong>Lasting Record</strong>
+          The model documents pre-restoration conditions for future reference, reporting, and monitoring.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Video Placeholder ===== -->
+  <section class="section">
+    <div class="container fade-in">
+      <div class="section-header">
+        <div class="section-eyebrow">Supporting Content</div>
+        <h2>Project Walkthrough</h2>
+        <p class="lead">A narrated walkthrough of the watershed terrain model and how it supports restoration planning.</p>
+      </div>
+      <div style="width:100%; aspect-ratio:16/9; background:var(--color-dark); border-radius:var(--radius-lg); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; color:rgba(255,255,255,.5); border:1px solid rgba(255,255,255,.06);">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        <span style="font-size:.85rem; letter-spacing:.06em; text-transform:uppercase;">YouTube Video (Coming Soon)</span>
+        <p style="font-size:.8rem; max-width:30ch; text-align:center; line-height:1.6;">Replace this placeholder with a YouTube embed when your walkthrough video is ready.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Next Project ===== -->
+  <section class="section bg-earth">
+    <div class="container fade-in" style="display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
+      <div>
+        <div class="section-eyebrow" style="color:rgba(255,255,255,.4);">Next Project</div>
+        <h3 style="color:#fff; font-size:1.5rem;">Complex Building Model</h3>
+        <p style="color:rgba(255,255,255,.6); font-size:.95rem; margin-top:.4rem;">High-detail existing conditions documentation for engineering and construction.</p>
+      </div>
+      <a href="project-building.html" class="btn btn-primary">View Project</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Redside Surveying &amp; Mapping</div>
+          <p class="footer__tagline">Geospatial Solutions for Recreation,<br>Restoration, and Infrastructure Projects.</p>
+          <span class="footer__license">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Licensed Professional Land Surveyor
+          </span>
+        </div>
+        <div>
+          <div class="footer__heading">Services</div>
+          <ul class="footer__links">
+            <li><a href="services.html">Reality Capture</a></li>
+            <li><a href="services.html">GIS &amp; Terrain Analysis</a></li>
+            <li><a href="services.html">Trail Planning Support</a></li>
+            <li><a href="services.html">Digital Project Delivery</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Projects</div>
+          <ul class="footer__links">
+            <li><a href="project-trail.html">Trail Corridor</a></li>
+            <li><a href="project-watershed.html">Watershed Restoration</a></li>
+            <li><a href="project-building.html">Building Model</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Company</div>
+          <ul class="footer__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html#workflows">Custom Workflows</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Redside Surveying &amp; Mapping. All rights reserved.</span>
+        <span>Pacific Northwest</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
