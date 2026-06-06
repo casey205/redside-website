@@ -343,30 +343,15 @@ p { max-width: 68ch; }
 }
 
 .hero__layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 1.2fr);
-  grid-template-areas:
-    "intro video"
-    "rest video";
-  gap: clamp(1.25rem, 3vw, 2rem);
-  align-items: start;
-}
-
-.hero__intro { grid-area: intro; }
-
-.hero__video {
-  grid-area: video;
-  width: 100%;
-  max-width: none;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-self: start;
-  position: sticky;
-  top: calc(var(--nav-height) + 1.25rem);
+  gap: clamp(1.25rem, 3vw, 2rem);
+  max-width: 680px;
 }
 
-.hero__rest { grid-area: rest; }
+.hero__intro {}
+
+.hero__rest {}
 
 .hero__video-player,
 .hero__video-placeholder {
@@ -1294,17 +1279,6 @@ p { max-width: 68ch; }
 /* --- Responsive ------------------------------------------ */
 @media (max-width: 1024px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .hero__layout {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "video"
-      "intro"
-      "rest";
-  }
-  .hero__video {
-    max-width: none;
-    position: static;
-  }
   .workflow-highlight { grid-template-columns: 1fr; }
   .project-card { grid-template-columns: 1fr; }
   .project-card--reverse { direction: ltr; }
