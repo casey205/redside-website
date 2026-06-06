@@ -412,7 +412,7 @@ p { max-width: 68ch; }
   font-weight: 600;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--color-rust-light);
+  color: rgba(255, 248, 235, 0.85);
   margin-bottom: 1rem;
 }
 
@@ -421,7 +421,7 @@ p { max-width: 68ch; }
   display: block;
   width: 32px;
   height: 2px;
-  background: var(--color-rust-light);
+  background: rgba(255, 248, 235, 0.6);
 }
 
 .hero h1 {
@@ -430,7 +430,7 @@ p { max-width: 68ch; }
 }
 
 .hero h1 span {
-  color: var(--color-rust-light);
+  color: rgba(255, 248, 235, 0.9);
   display: block;
 }
 
