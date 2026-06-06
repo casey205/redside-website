@@ -293,6 +293,43 @@ p { max-width: 68ch; }
     );
 }
 
+/* --- Hero carousel ---------------------------------------- */
+.hero__carousel {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.hero__slide.active {
+  opacity: 1;
+}
+
+.hero__slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero__slide-img--zoom {
+  transform: scale(1.15);
+  transform-origin: center center;
+}
+
+.hero__dim {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 18, 10, 0.58);
+}
+
 .hero__content.container {
   max-width: min(1320px, 96vw);
 }
